@@ -1,0 +1,29 @@
+{
+  "name": "node-oembed-io",
+  "version": "0.0.1",
+  "description": "A Node.js wrapper for oEmbed.io",
+  "main": "oembed-io.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brandonb927/node-oembed-io.git"
+  },
+  "author": "Brandon Brown",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brandonb927/node-oembed-io/issues"
+  },
+  "homepage": "https://github.com/brandonb927/node-oembed-io",
+  "dependencies": {
+    "request": "*"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*",
+    "gulp": "*",
+    "gulp-git": "*",
+    "gulp-jshint": "*",
+    "gulp-mocha": "*",
+    "jshint": "*",
+    "jshint-stylish": "*"
+  }
+}
