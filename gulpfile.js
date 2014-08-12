@@ -39,7 +39,7 @@ gulp.task('push', ['tag'], function () {
   git.push('origin', 'master', { args: ' --tags' }).end();
 });
 
-gulp.task('npm', ['tag'], function(done) {
+gulp.task('npm', ['push'], function(done) {
   spawn('npm', ['publish'], { stdio: 'inherit' }).on('close', done);
 });
 
