@@ -38,4 +38,5 @@ Now you can finally run the tests.
 
 ## License
 
-MIT
+The MIT License (MIT)
+Copyright (c) 2014 Brandon Brown
