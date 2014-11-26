@@ -16,6 +16,17 @@ describe('oEmbed.io functions test', function() {
     });
   });
 
+  describe('#oembed.get() with a url for a non-existent page', function() {
+    it('should return a 404 status code', function(done) {
+      var url = 'https://www.anonexistentwebpagethatgoesnowhere.com';
+      oembed.get(url, function(err, code, body) {
+        expect(err).to.be.equal(null);
+        expect(code).to.be.equal(404);
+        expect(body).to.be.equal(undefined);
+        done();
+      });
+    });
+  });
   // describe('#oembed.get() with args', function() {
   //   it('should return a json object', function(done) {
   //     oembed.get('https://www.youtube.com/watch?v=cR_GVBdZF_M', args, function(err, code, body) {
